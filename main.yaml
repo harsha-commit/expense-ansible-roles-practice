@@ -4,6 +4,6 @@
   become: true
   vars_files:
     - credentials.yaml
-    - variables-{{env}}.yaml
+    - "variables-{{env}}.yaml"
   roles:
     - "{{ component }}"
