@@ -1,7 +1,9 @@
 - name: "Playbook for {{ component }} Configuration"
-  hosts: "{{ component }}"
+  hosts: localhost
+  connection: local
   become: true
   vars_files:
     - credentials.yaml
+    - variables-{{env}}.yaml
   roles:
     - "{{ component }}"
