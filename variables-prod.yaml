@@ -1,2 +1,3 @@
 login_host: db-prod.harshadevops.site
 DB_HOST: db-prod.harshadevops.site
+BACKEND_API_URL: backend-prod.harshadevops.site
